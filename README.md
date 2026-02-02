@@ -1,7 +1,7 @@
 # Overview
-During a penetration test of the web application, I evaluated the JWT-based authentication mechanism and discovered a critical flaw in signature verification. The server accepts tokens with the alg header set to "none", effectively bypassing signature validation. By crafting a JWT with arbitrary claims, I was able to impersonate the administrator and perform privileged actions, including deleting user accounts. This demonstrates a severe authentication bypass that allows complete account takeover.
+I evaluated the JWT-based authentication mechanism and discovered a critical flaw in signature verification. The server accepts tokens with the alg header set to "none", effectively bypassing signature validation. By crafting a JWT with arbitrary claims, I was able to impersonate the administrator and perform privileged actions, including deleting user accounts. This demonstrates a severe authentication bypass that allows complete account takeover.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Logged in as a regular user and captured the JWT from session traffic.
 
